@@ -1,0 +1,1147 @@
+/*Global variables*/
+:root{
+  --sub-containers-width: 100%;
+  --main1:#ec753e ;
+}
+*{
+  font-family: 'Fjalla One', sans-serif;
+}
+::selection{
+  background-color: var(--main1);
+  color: #fff;
+}
+/*End global variables*/
+/* Start Global Styles */
+/* Style the scroll bar */
+::-webkit-scrollbar {
+width: 10px;
+}
+::-webkit-scrollbar-track {
+background-color: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+background-color: #888;
+border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+background-color: #555;
+}
+.container{
+  width:70%;
+  margin: 0 20%;
+  
+}
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 90%;
+  background-image: url('../img/34.png');
+  scroll-behavior: smooth;
+}
+.clear{
+  clear: both;
+}
+/*End Global styles*/
+/* Start Sizes of sub-containers& images of 1st container */
+.title{
+  width: var(--sub-containers-width);
+  height: 30%;
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  background-color: white;
+  color: #454545;
+}
+.image-for-header img{
+  width: var(--sub-containers-width);
+  display: block;
+  height:100%;
+ }
+/* End Sizes of sub-containers& images of 1st container */
+
+/* Start title*/
+.title{
+  display: flex;
+}
+.title h1{
+line-height: 60px;
+padding: 1%;
+margin: 0;
+}
+.title h3{
+padding:0;
+margin: 0;
+}
+.group-title{
+  margin: 2% 0;
+}
+.title h1{
+  background-color: #fb996b;
+}
+@media (max-width: 670px) {
+  .title .group-title{
+    display: none;
+  }
+}
+/* End title*/
+/* Start nav-bar*/
+.main-nav{
+  width: 100%;
+  height: 100%;
+  background-color:#454545;
+  padding: 1px;
+  box-sizing: border-box;
+}
+.main-ul{
+  display: flex;
+  font-size: large;
+  flex-direction: row;
+}
+.main-ul .main-li{
+  list-style: none;
+  padding-left: 3%;
+}
+    /* start hiding menu& show when hover */
+.sub-menu{
+  display: block;
+}
+.menu-item:hover .sub-menu{
+  display: block;
+}
+.main-li a:hover, .menu-item a:hover{
+  color:#fb5d33;
+}
+  /* end hiding menu& show when hover */
+.main-nav a{
+  color: white;
+  text-decoration: none;
+}
+.hidden-when-1099{
+  background-color: wheat;
+}
+.menu-item.show{
+  display: none;
+}
+  /*hiding competitions, courses if width less than 1100px*/
+@media (max-width: 1100px) {
+  .main-ul{
+    flex-direction: column;
+  }
+  .main-ul li{
+    margin: 4%;
+    border-bottom: 2px solid #c5c4c4;
+  }
+}
+.main-li, .menu-item{
+  list-style: none;
+}
+.main-li, .menu-item{
+  padding-left: 2%;
+}
+  /* start style sub menu */
+  .sub-menu{
+    position: absolute;
+    z-index: 3;
+    font-size: smaller;
+    display: none;
+    padding: 10px;
+    background-color: #fb996b;
+    border-radius: 5px;
+  }
+  .sub-menu div{
+    margin-bottom: 17%;
+  }
+  .sub-menu li{
+    margin: 0;
+    padding: 0;
+  }
+  /* end style sub menu */
+/* End nav-bar*/
+.group:nth-of-type(1){
+  position: absolute;
+  left: 0;
+}
+.group:nth-of-type(2){
+  position: absolute;
+  right: 0;
+}
+/* Start Sizes of sub-containers& images of 2nd container */
+.hero{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content:space-around;
+  background-color: white;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.text{
+  width: 40%;
+  height: 100%;
+}
+.video-container{
+  width: 50%;
+  height: 100%;
+  margin-top: 5%;
+}
+.video-container iframe{
+  width: 100%;
+  height: 300px;
+  float: right;
+}
+/* End Sizes of sub-containers& images of 2nd container */
+/* Start Sizes of sub-containers& images of 3rd container */
+.services{
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/someone_cook\ copy.jpg);
+  color: #FFFFFF;
+  display: inline-block;
+}
+.services .special{
+  text-align: center;
+}
+.services .h1-group{
+  display: flex;
+  justify-content: space-evenly;
+}
+.services .h1-group .h1:nth-of-type(2){
+  margin-bottom: 10% ;
+}
+.h1-group h1{
+  background-color: #fff;
+  border: 3px solid #FFFFFF;
+  width: 25%;
+  text-align: center;
+  padding: 5px;
+  font-size: larger;
+  color: #333;
+}
+.h1-group h1:hover{
+  transform: scale(1.05);
+  transition: transform 1s;
+}
+/* End Sizes of sub-containers& images of 3rd container */
+/*Start Footer*/
+.container.footer {
+  width: 70%;
+  
+}
+
+footer {
+  background: #333;
+  padding: 20px 0;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.footer-content p {
+  margin: 0;
+}
+
+.footer-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-content li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.footer-content a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-content a:hover {
+  text-decoration: underline;
+}
+/*End Footer*/
+/*Start forms General style*/
+form{
+  display: flex;
+  text-align: center;
+
+}
+.margin-normal{
+  margin: 3%;
+}
+.padding-normal{
+padding: 1%;
+}
+.submit{
+  background-image: linear-gradient(to bottom, #fb5d33, var(--main1));
+  color: #FFFFFF;
+  padding: 5px 5px;
+  border-radius: 5px;
+  font-size: 14px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  border-color: transparent;
+  width: fit-content;
+  line-height: inherit;
+  cursor: pointer;
+}
+.submit a{
+  text-decoration: none;
+  font-size: 20px;
+  color: #fff;
+}
+input,
+select, textarea{
+  border-color: transparent transparent #fb5d33 transparent;
+  height:35px;
+  padding: 5px;
+}
+input:focus,
+select:focus, textarea:focus {
+  outline: none;
+}
+form label{
+  font-size:20px;
+}
+.container h1{
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 1.5px;
+}
+.sth-stack{
+  width: 100%;
+}
+.no-margin-bottom{
+  margin-bottom:0 !important;
+}
+.sth-stack::placeholder{
+  font-size: 20px;
+  color: #e8e8e8;
+}
+/*End forms General style*/
+/*Start Registration*/
+.registration{
+  flex-direction: row;
+  height: 100%;
+  flex-wrap:wrap;
+}
+.container.form{
+  background-color: #fff;
+  border: 2px solid #808080;
+
+}
+.registration .group-form:nth-of-type(1), .registration .group-form:nth-of-type(2){
+  width: 45%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin:0 2%;
+}
+.registration .group-form:nth-of-type(3){
+  margin-left: 5%;
+  width: 45%;
+}
+.group-form:nth-of-type(3) label{
+  margin-right: 5%;
+}
+.margin-bottom{
+  margin-bottom:1%;
+  padding: 2% 2% 4% 0;
+}
+.login input::placeholder{
+  font-size: 20px;
+  color: #e8e8e8;
+}
+
+#date {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  line-height: 1.5;
+  border: none;
+  border-bottom: 2px solid #fb5d33;
+  background-color: transparent;
+  color: #d35400;
+  box-sizing: border-box;
+  transition: border-bottom-color 0.3s ease-in-out;
+  padding: 2% 2% 4% 0;
+}
+.hr{
+  height: 3px;
+  background: red; /* For browsers that do not support gradients */ 
+  background: -webkit-linear-gradient(to right, red , yellow); /*For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(to right, red, yellow); /* For Opera 11.1 to 12.0 */ 
+  background: -moz-linear-gradient(to right, red, yellow); /* For Firefox 3.6 to 15 */ 
+ background: linear-gradient(to right, red , yellow); /* Standard syntax */
+ margin: 0 5%  0 2%;
+}
+#date:focus {
+  outline: none;
+  border-bottom-color: #d35400;
+}
+.registration input{
+  text-align: center;
+}
+.registration input::placeholder {
+  text-align: center;
+  font-size: 20px;
+  color: #e8e8e8;
+}
+.registration button{
+  margin:  0 40%;
+}
+/*End Registration*/
+/*Start login*/
+.login {
+  flex-direction: row;
+  height: 100%;
+  flex-wrap:wrap;
+  padding: 5%;
+}
+.login input {
+  width: 100%;
+  margin-bottom: 3%;
+}
+.login .submit {
+  margin-top: 40px;
+}
+.login input::placeholder{
+  font-size: 20px;
+  color: #e8e8e8;
+}
+/*End login*/
+/*Start contact us*/
+.container.contact-us{
+  background-color: #fff;
+  padding: 5%;
+  box-sizing: border-box;
+  border: 2px solid #808080;
+
+}
+.contact_us {
+  flex-direction: row;
+  height: 100%;
+  flex-wrap:wrap;
+  padding: 5%;
+}
+.contact_us input, textarea {
+  width: 100%;
+  margin-bottom: 3%;
+}
+.contact_us .submit {
+  margin-top: 40px;
+}
+.contact_us input::placeholder{
+  font-size: 20px;
+  color: #e8e8e8;
+}
+/*End contact us*/
+/*start competitions entry*/
+.competitions-entry button{
+  display: block;
+  margin-bottom: 3%;
+}
+.competitions-entry{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.competitions-entry input{
+  width: fit-content;
+}
+.competitions-entry input, .competitions-entry label{
+  width: 40%;
+}
+/*end competitions entry*/
+
+/*start quizzes entry*/
+.quiz-entry{
+  width: 100%;
+
+}
+.quiz-entry-form{
+  display: flex;
+  flex-direction: column;
+}
+.quiz-entry h1{
+  margin: 0;
+  padding: 0;
+}
+.quiz-entry .img img{
+  margin-top:3%;
+  width: 40%;
+}
+.quiz-entry .text a{
+  text-decoration: none;
+  color: #333;
+}
+.quiz-entry .text{
+  width: 100%;
+  font-size: large;
+}
+/*End quizzes entry*/
+/*start search for a course */
+.search-course{
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+}
+.search-course select, .search-course label, button{
+  margin: 1%;
+}
+
+/*end search for a course */
+/* start chief or not */
+.apply-or-search{
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+
+}
+.apply-or-search form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 2%;
+}
+.child label{
+margin-top: 0;
+}
+.apply-or-search form button{
+  width: fit-content !important;
+  margin-top: 2%;
+}
+/* end chief or not */
+/*Start Apply as a chef*/
+.apply-as-a-chief{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  
+}
+.apply-as-a-chief label{
+  padding: 3%;
+}
+.apply-as-a-chief button{
+  margin-top: 2%;
+}
+/*End apply as a chief*/
+/* Start share your experience */
+.share-your-experience-form{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.share-your-experience{
+  
+  background-color: #e3e3e3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3%;
+  box-sizing: border-box;
+}
+.share-your-experience h2{
+  color: #454545;
+  margin: 0 0 5% 0;
+  padding: 0;
+}
+.post{
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #d3d2d2;
+  padding: 5%;
+  background-color: #fff;
+  margin-bottom: 5%;
+  border-radius: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.post img{
+  width: 60%;
+}
+.post h2{
+  background-color: #ededed;
+  color: #454545;
+  padding: 3%;
+  box-sizing: border-box;
+  border-radius: 5px;
+  width: fit-content;
+  
+}
+.container.post-con{
+  background-color: #f0f0f0;
+  padding: 5%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #808080;
+  
+}
+.post p{
+  background-color:#ededed;
+  padding: 3%;
+  border-radius: 5px;
+  line-height: 1.8em;
+}
+.post img{
+  display: block;
+}
+.share-your-experience input{
+width: 70%;
+margin-bottom: 5%;
+}
+.share-your-experience label{
+  margin-bottom: 2%;
+}
+.share-your-experience textarea{
+  width: 70%;
+  height: 300px;
+  margin-bottom: 5%;
+}
+.share-your-experience textarea:focus{
+  border-color: #fb5d33;
+}
+.share-a-post{
+  width: 100%;
+  display: flex;
+}
+.div-share-your-experience{
+  display: none;
+}
+.share-a-post-now{
+  background-image: linear-gradient(to bottom, #fb5d33, var(--main1));
+  color: #FFFFFF;
+  padding: 5px 5px;
+  border-radius: 5px;
+  font-size: 14px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  border-color: transparent;
+  width: 150px;
+  line-height: inherit;
+  cursor: pointer;
+  margin-bottom: 10%;
+  padding: 4%;
+}
+.discard{
+  margin-top: 4%;
+}
+/* End share your experience */
+/* start publish a course */
+.container.publish-a-course form{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #333;
+
+}
+.container.publish-a-course h2{
+margin: -1.5% 0 7.5% 0;
+padding: 0;
+color: #333;
+}
+.container.publish-a-course{
+  background-color: #fff;
+  padding: 5%;
+  box-sizing: border-box;
+  border: 2px solid #808080;
+
+}
+.container.publish-a-course input, .container.publish-a-course label{
+  margin-top: 4%;
+}
+.container.publish-a-course input:focus, .container.publish-a-course textarea:focus{
+  border-color: #fb5d33;
+}
+/* end publish a course */
+/* start add a recipe */
+.container.add-a-recipe{
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.add-a-recipe-form{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.add-a-recipe-form label {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.add-a-recipe-form input[type="text"], 
+.add-a-recipe-form textarea, 
+.add-a-recipe-form input[type="file"] {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 5px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+/* end add a recipe */
+/* start Buy the course */
+.container.buy-the-course{
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  border: 2px solid #808080;
+
+}
+
+.buy-the-course-form{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.buy-the-course-form label {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.buy-the-course-form .submit{
+  margin-top: 4%;
+}
+/* end buy the course */
+/* start enrolled courses */
+.container.list-of-enrolled-courses{
+  background-color: #fff;
+}
+.container.list-of-enrolled-courses li{
+  list-style: none;
+  margin: 0;
+  padding: 2%;
+  width: 80%;
+  box-sizing: border-box;
+  border: 3px solid #c5c4c4;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  margin: 5%;
+}
+.container.list-of-enrolled-courses .submit{
+  margin-top: 4%;
+}
+/* end enrolled courses */
+/* start wheel */
+.loader {
+  border: 20px solid #f3f3f3;
+  border-top: 20px solid rgb(255, 144, 64);
+  border-bottom: 20px solid #eb2626;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.stop-it{
+position: absolute;
+z-index: 4;
+}
+.container.spinner{
+  background-color: #fff;
+  padding: 10%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container.spinner button{
+  margin-top: 6%;
+  padding:2%;
+}
+.container.spinner button a{
+  font-size: 20px;
+}
+/* end wheel */
+
+/*start user dashboard */
+.container.home-user-part{
+  background-color: #fff;
+  box-sizing: border-box;
+}
+/* end user dashboard */
+/* start chef dashboard */
+.container.home-chef-part{
+  background-color: #fff;
+  box-sizing: border-box;
+}
+.container.home-chef-part .container .services .h1-group h1 a{
+  text-decoration: none;
+}
+/* end chef dashboard */
+/* start profile */
+.container.profile{
+  background-color: #fff;
+  padding: 4%;
+  box-sizing: border-box;
+  border: 2px solid #808080;
+
+}
+/* end profile */
+/*start quizzes itself*/
+.container.quiz-itself{
+  background-color: #fff;
+  padding: 2%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid ;
+  border-color:  #f87652  #f87652 transparent  #f87652;
+
+}
+.container.quiz-itself .remove{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container.quiz-itself .quiz-itself-form{
+  display: flex;
+  flex-direction: column;
+}
+.quiz-itself-form input[id="user_id"]{
+  border-bottom: 2px solid #d35400;
+}
+/*End quizzes itself*/
+/* start privacy policy */
+.container.pri{
+  background-color: #fff;
+  padding: 4%;
+  box-sizing: border-box;
+  border: 2px solid #808080;
+
+}
+.container.pri h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+.container.pri h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.container.pri ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.container.pri li {
+  margin-bottom: 10px;
+}
+
+.container.pri p {
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+ .pri {
+  text-align: justify;
+}
+/* end privacy policy */
+/* start terms of use */
+.container.ter{
+  background-color: #fff;
+  padding: 4%;
+  box-sizing: border-box;
+  border: 2px solid #808080;
+
+}
+.container.ter h1 {
+  font-size: 36px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.container.ter h2 {
+  font-size: 24px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+/* Set list styles */
+.container.ter ul {
+  margin-top: 0;
+  margin-bottom: 20px;
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.container.ter ol {
+  margin-top: 0;
+  margin-bottom: 20px;
+  list-style-type: decimal;
+  padding-left: 20px;
+}
+
+.container.ter li {
+  margin-bottom: 10px;
+}
+
+.container.ter a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.container.ter a:hover {
+  text-decoration: underline;
+}
+
+.container.ter p {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.container.ter blockquote {
+  margin: 0;
+  padding: 20px;
+  border-left: 5px solid #007bff;
+  background-color: #f8f9fa;
+}
+
+.container.ter pre {
+  margin: 0;
+  padding: 20px;
+  background-color: #f8f9fa;
+  font-size: 14px;
+  line-height: 1.5;
+  overflow-x: auto;
+  white-space: pre-wrap;
+}
+
+.container.ter code {
+  font-family: Consolas, monospace;
+  font-size: 14px;
+}
+/* end terms of use */
+/* start feedbacks */
+.container.feedbacks{
+  background-color: #fff;
+  padding: 4%;
+  box-sizing: border-box;
+  border: 2px solid #808080;
+
+}
+/* end feedbacks */
+/* Start recipes */
+.container.recipes, .container.your-recipe{
+  background-color: #fff;
+  padding: 3%;
+  box-sizing: border-box;
+  border: 2px solid #808080;
+
+}
+/* end recipes */
+/* start intro */
+.container.intro{
+  background-color: #fff;
+  padding: 4%;
+  box-sizing: border-box;
+  border: 2px solid ;
+  border-color:  #f87652  #f87652 transparent  #f87652;
+  font-size: larger;
+}
+.container.intro p{
+  background-color:#ffd6c2;
+  padding: 2%;
+  border-radius: 1.8%;
+}
+.container.intro p::first-letter{
+  font-size: 20px;
+}
+.container.intro ul li{
+  margin: 0 0 3% 0;
+  width: fit-content;
+  padding: 1.5%;
+  list-style: none;
+  border-bottom: 2px solid #d35400;
+}
+.container.intro ul{
+  margin: 0;
+padding: 0 1% 0 13px;
+}
+/* end intro */
+/* Start enroll a course */
+.container.enroll-a-course{
+  background-color: #f9f7f7;
+  padding: 2%;
+  box-sizing: border-box;
+  border: 2px solid ;
+  border-color: transparent  #f87652  #f87652   #f87652;
+
+}
+.container.enroll-a-course table{
+  padding: 5%;
+  border-radius: 2%;
+  box-sizing: border-box;
+  width: 100%;
+  font-size: larger;
+  letter-spacing: 0.05rem;
+  font-weight: lighter;
+}
+.container.enroll-a-course table tr td{
+  border: 1.5px solid #e3e2e2;
+
+}
+.container.enroll-a-course table th, .container.enroll-a-course table td {
+  text-align: center;
+  padding: 8px;
+}
+
+.container.enroll-a-course table th {
+  background-color: #ff8969 ;
+  color: white;
+}
+
+.container.enroll-a-course table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.container.enroll-a-course table tr:hover {
+  background-color: #ddd;
+}
+/* End enroll a course */
+/* start congrats */
+.container.congrats, .container.cong{
+  background-color: #fff;
+  box-sizing: border-box;
+  color: #454545;
+}
+.container.cong{
+  display: flex;
+  flex-direction: column;
+  padding: 3%;
+  box-sizing: border-box;
+  align-items: center;
+
+  border: 2px solid ;
+  border-color: transparent  #f87652  #f87652   #f87652;
+
+}
+/* end congrats */
+/* start questions page */
+.questions{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-sizing: border-box;
+
+  
+}
+/* end questions page */
+/* start prize-entry */
+/* start raffle */
+.container.Raffle-for-prizes{
+  background-color: #fff;
+  padding: 3%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #808080;
+
+}
+.container.Raffle-for-prizes form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.container.Raffle-for-prizes .prize{
+  background-color: #f3814c;
+  width: 500px;
+  text-align: center;
+  padding: 2%;
+  border-radius: 2%;
+  color: #fff;
+}
+.quiz-itself-form{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+/* end raffle */
+/* end prize-entry */
+/* start winners */
+.container.winner{
+  background-image: url(../gif/color-sparkle2.gif);
+  padding: 4%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 4px inset #ffc8af;
+  border: 2px solid #808080;
+
+}
+
+.container.winner .winners-h1 {
+  padding: 2%;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+/* end winners */
+/* start saved-recipe */
+.container.saved-recipe{
+  background-color: #fff;
+  padding: 3%;
+  box-sizing: border-box;
+  border: 2px solid #808080;
+
+}
+/* end saved-recipe */
+/* Start team (our-chefs) */
+.container.team{
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3%;
+  box-sizing: border-box;
+  border: 2px solid #808080;
+
+}
+/* End team (our-chefs) */
+/* Start reacts */
+
+/* End reacts */
