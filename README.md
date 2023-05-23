@@ -6,4 +6,5 @@ To open it:
 - Put the project directory in htdocs folder
 - Import the database in phpmyadmin
 - then open the website by the local host of xampp
+
 Enjoy!
