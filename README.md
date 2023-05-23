@@ -1,4 +1,4 @@
-# Cooking-forum-website
+# Cooking-forum-website: Let's Cook!
 This was my first time to take responsibility of making the whole front-end part for a website, it was a great begining:) 
 
 To open it: 
